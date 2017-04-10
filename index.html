@@ -1,26 +1,27 @@
 ---
 layout: default
-full_title: 草延龄
+full_title: Zack博客
 ---
-<div class="login">
-  <div class="dialog">
-    <p class="brand">{{ site.title }}</p>
-    <div class="block">
-      <div class="block-header"><h2>登陆后台</h2></div>
-      <form>
-        <div class="form-group">
-          <label>管理员名称</label>
-          <input type="text" class="form-control">
+<div class="content">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>首页</h2>
+      <br>
+      <div id="blog-posts">
+        <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
+          <div class="col-md-4">
+            <a href="blog-item.html" class="thumb"><img src="images/blog/737034_24905666.jpg" class="img-responsive hidden-xs"></a>
+          </div>
+          <div class="col-md-8">
+            <div class="post-summary">
+              <p class="date">June 13th, 2013</p>
+              <h2><a href="blog-item.html">Here is a title for the blog post</a></h2>
+              <p></p>
+              <p><a class="btn btn-sm" href="blog-item.html">阅读全文</a></p>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label>密码</label>
-          <input type="password" class="form-control">
-        </div>
-        <div class="form-actions">
-          <a href="" class="btn btn-success pull-right">登入</a>
-          <div class="clearfix"></div>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
 </div>
