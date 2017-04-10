@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span>导航</span></button>
+    <span class="navbar-brand">{{ site.title }}</span>
+  </div>
+</div>
+<div class="navbar-collapse collapse">
+  <div id="main-menu">
+    <div id="phone-navigation" class="visible-xs">
+      <ul id="dashboard-menu" class="nav nav-list">
+        <li><a rel="tooltip" data-placement="right" data-original-title="会员" href="/pt-member/"><i class="fa fa-users"></i> <span class="caption">会员</span></a></li>
+        <li><a rel="tooltip" data-placement="right" data-original-title="普通用户" href="/pt-user/"><i class="fa fa-user"></i> <span class="caption">普通用户</span></a></li>
+        <li><a rel="tooltip" data-placement="right" data-original-title="系统管理" href="/pt-settings/"><i class="fa fa-cog"></i> <span class="caption">系统管理</span></a></li>
+        <li><a rel="tooltip" data-placement="right" data-original-title="登出"><i class="fa fa-sign-out"></i> <span class="caption">登出</span></a></li>
+      </ul>
+    </div>
+    <ul class="nav nav-tabs hidden-xs">
+      <li class="{% if page.category == 'pt-member' %}active{% endif %}"><a href="/pt-member/"><i class="fa fa-users"></i> <span>会员</span></a></li>
+      <li class="{% if page.category == 'pt-user' %}active{% endif %}"><a href="/pt-user/"><i class="fa fa-user"></i> <span>普通用户</span></a></li>
+      <li class="{% if page.category == 'pt-settings' %}active{% endif %}"><a href="/pt-settings/"><i class="fa fa-cog"></i> <span>系统管理</span></a></li>
+      <li><a><i class="fa fa-sign-out"></i> <span>登出</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      {{ content }}
+    </div>
+  </div>
+  <footer><p>&copy; 2011-2017 草延龄</p></footer>
+</div>

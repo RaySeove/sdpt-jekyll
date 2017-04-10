@@ -1,0 +1,16 @@
+url: http://www.dbxlock.com
+
+title: 草延龄
+
+keywords: 草延龄
+
+description: 草延龄。
+
+relative_permalinks: false
+
+notice: notice
+
+notice-info: 暂无
+
+exclude:
+  - README.md
