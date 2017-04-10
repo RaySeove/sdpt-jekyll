@@ -25,6 +25,39 @@
   <!--[if (gt IE 9)|!(IE)]><!--> 
   <body> 
   <!--<![endif]-->
-    {{ content }}
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span>导航</span></button>
+        <span class="navbar-brand">{{ site.title }}</span>
+      </div>
+    </div>
+    <div class="navbar-collapse collapse">
+      <div id="main-menu">
+        <div id="phone-navigation" class="visible-xs">
+          <ul id="dashboard-menu" class="nav nav-list">
+            <li><a rel="tooltip" data-placement="right" data-original-title="首页" href="{{ site.url }}"><i class="fa fa-home"></i> <span class="caption">首页</span></a></li>
+            <li><a rel="tooltip" data-placement="right" data-original-title="分类A" href="{{ site.url }}"><i class="fa fa-user"></i> <span class="caption">分类A</span></a></li>
+            <li><a rel="tooltip" data-placement="right" data-original-title="分类B" href="{{ site.url }}"><i class="fa fa-user"></i> <span class="caption">分类B</span></a></li>
+            <li><a rel="tooltip" data-placement="right" data-original-title="分类C" href="{{ site.url }}"><i class="fa fa-user"></i> <span class="caption">分类C</span></a></li>
+            <li><a rel="tooltip" data-placement="right" data-original-title="关于我" href="{{ site.url }}/about/"><i class="fa fa-user"></i> <span class="caption">关于我</span></a></li>
+          </ul>
+        </div>
+        <ul class="nav nav-tabs hidden-xs">
+          <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}"><i class="fa fa-home"></i> <span>首页</span></a></li>
+          <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}"><i class="fa fa-home"></i> <span>分类A</span></a></li>
+          <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}"><i class="fa fa-home"></i> <span>分类B</span></a></li>
+          <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}"><i class="fa fa-home"></i> <span>分类C</span></a></li>
+          <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/"><i class="fa fa-home"></i> <span>关于我</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12">
+          {{ content }}
+        </div>
+      </div>
+      <footer><p>&copy; 2011-2017 Zack博客</p></footer>
+    </div>
   </body>
 </html>
