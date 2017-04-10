@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /a/
+category: a
+title: 分类A
+---
+<h2>{{ page.title }}</h2>
+<br>
+<div id="blog-posts">{% for post in site.categories["a"] %}
+  <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
+    <div class="col-md-4">
+      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.category }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
+    </div>
+    <div class="col-md-8">
+      <div class="post-summary">
+        <p class="date">{{ post.date | date:"%Y年%m月%d日" }}</p>
+        <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.description }}</p>
+        <p><a class="btn btn-sm" href="{{ site.url }}{{ post.url }}">阅读全文</a></p>
+      </div>
+    </div>
+  </div>{% endfor %}
+</div>
