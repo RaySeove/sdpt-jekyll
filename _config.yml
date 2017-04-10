@@ -1,16 +1,12 @@
 url: http://www.sdyea.org
 
-title: 草延龄
+title: Zack博客
 
-keywords: 草延龄
+keywords: Zack博客
 
-description: 草延龄。
+description: Zack博客
 
 relative_permalinks: false
-
-notice: notice
-
-notice-info: 暂无
 
 exclude:
   - README.md
