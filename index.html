@@ -7,7 +7,7 @@ full_title: Zack博客
 <div id="blog-posts">{% for post in site.categories["a"] %}
   <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
     <div class="col-md-4">
-      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
+      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.category }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
     </div>
     <div class="col-md-8">
       <div class="post-summary">
@@ -20,7 +20,7 @@ full_title: Zack博客
   </div>{% endfor %}{% for post in site.categories["b"] %}
   <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
     <div class="col-md-4">
-      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
+      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.category }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
     </div>
     <div class="col-md-8">
       <div class="post-summary">
@@ -33,7 +33,7 @@ full_title: Zack博客
   </div>{% endfor %}{% for post in site.categories["c"] %}
   <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
     <div class="col-md-4">
-      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.type-en }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
+      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.category }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
     </div>
     <div class="col-md-8">
       <div class="post-summary">
